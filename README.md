@@ -1,6 +1,3 @@
-Aquí tienes un ejemplo de un archivo **README** que describe cómo configurar y usar tu aplicación de la agenda telefónica con **Prisma**, **Express**, y **Node.js**.
-
----
 
 # Agenda Telefónica - Node.js + Prisma + Express
 
@@ -169,10 +166,3 @@ Content-Type: application/json
 - **Cors**: Middleware para habilitar CORS (Cross-Origin Resource Sharing).
 - **Nodemon**: Herramienta para reiniciar automáticamente el servidor en modo desarrollo.
 
-## Contribuir
-
-Si deseas contribuir, por favor realiza un fork del proyecto, crea una rama para tu característica o corrección, y luego realiza un pull request.
-
----
-
-Si tienes alguna otra modificación o duda, ¡házmelo saber!
