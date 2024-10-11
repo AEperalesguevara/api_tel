@@ -1,0 +1,14 @@
+datasource db {
+  provider = "sqlite" // Puedes cambiar a otro proveedor como PostgreSQL o MySQL
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Person {
+  id     Int     @id @default(autoincrement())
+  name   String
+  number String
+}
