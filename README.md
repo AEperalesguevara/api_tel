@@ -121,41 +121,6 @@ GET http://localhost:3001/info
 
 Esta página muestra el número de personas en la agenda y la fecha/hora en que se solicitó la información.
 
-## Manejo de errores
-
-El backend valida los datos en las solicitudes POST:
-- **400 Bad Request**: Si falta el nombre o el número.
-- **400 Bad Request**: Si el nombre ya existe en la agenda.
-- **404 Not Found**: Si se intenta acceder a una persona con un `ID` no existente.
-
-## Pruebas
-
-Puedes probar la aplicación utilizando herramientas como **Postman** o el **REST Client** de Visual Studio Code.
-
-### Ejemplo de prueba con REST Client en Visual Studio Code
-
-Crea un archivo `.http` en tu proyecto con el siguiente contenido:
-
-```http
-### Crear nueva persona
-POST http://localhost:3001/api/persons
-Content-Type: application/json
-
-{
-    "name": "Alice Johnson",
-    "number": "111-222-3333"
-}
-```
-
-### Ejemplo de respuesta:
-
-```json
-{
-  "id": 4,
-  "name": "Alice Johnson",
-  "number": "111-222-3333"
-}
-```
 
 ## Tecnologías utilizadas
 
